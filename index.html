@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Scrolling 01</title>
+
+    <!-- custom css flie link -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="background">
+        <h3 class="text">adventure is worthwhile</h3>
+        <img src="images/mountain.png" alt="">
+    </div>
+
+    <div class="content">
+        <h3>simple parallax scrolling effect</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae magni 
+            illo corporis a deleniti, quidem aspernatur? Provident ipsum modi id magni, itaque, 
+            soluta saepe quos qui minus porro amet dolor architecto beatae quo quibusdam cumque 
+            obcaecati dicta, error earum nostrum et. In nemo saepe atque odio quos eius, sed odit 
+            non soluta eos asperiores iure itaque, iusto ratione repudiandae officiis maxime nam 
+            nobis illo voluptatum veritatis excepturi. Maxime officia accusantium omnis, minima 
+            dolor doloribus? Autem voluptate ex quae asperiores pariatur excepturi accusamus odio 
+            esse accusantium ipsa, quisquam temporibus facere cumque doloremque modi error quos 
+            corporis voluptatibus nostrum ut similique.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure repudiandae magni 
+            illo corporis a deleniti, quidem aspernatur? Provident ipsum modi id magni, itaque, 
+            soluta saepe quos qui minus porro amet dolor architecto beatae quo quibusdam cumque 
+            obcaecati dicta, error earum nostrum et. In nemo saepe atque odio quos eius, sed odit 
+            non soluta eos asperiores iure itaque, iusto ratione repudiandae officiis maxime nam 
+            nobis illo voluptatum veritatis excepturi. Maxime officia accusantium omnis, minima 
+            dolor doloribus? Autem voluptate ex quae asperiores pariatur excepturi accusamus odio 
+             esse accusantium ipsa, quisquam temporibus facere cumque doloremque modi error quos 
+            corporis voluptatibus nostrum ut similique.</p>
+        
+    </div>
+
+    <script>
+        window.onscroll = () => {
+            let value = window.scrollY;
+            document.querySelector('.text').style.top = -value * 1 + ('px');
+        }
+    </script>
+
+</body>
+</html>
